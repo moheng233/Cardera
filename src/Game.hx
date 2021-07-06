@@ -41,7 +41,8 @@ class Game extends Process {
 		fx = new Fx();
 		hud = new ui.Hud();
 
-		new Player(5,5);
+		var player = new Player(5,5);
+		camera.trackEntity(player,false);
 
 		Process.resizeAll();
 		trace(Lang.t._("Game is ready."));
