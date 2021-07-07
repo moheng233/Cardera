@@ -34,7 +34,7 @@ class Player extends Entity {
     var runtile:Array<Tile>;
     var runendtile:Array<Tile>;
 
-    var anim: BetterAmim;
+    public var anim: BetterAmim;
 
     public function new(x,y) {
         super(x,y);
@@ -63,7 +63,7 @@ class Player extends Entity {
 
         this.anim = new BetterAmim(this.idletile,7,spr);
         // this.anim.fading = true;
-        trace("Player is Render");
+        trace("玩家完毕");
 
         ca = Main.ME.controller.createAccess("player");
     }

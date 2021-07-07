@@ -15,7 +15,8 @@ class Assets {
 		initDone = true;
 
 		fontPixel = hxd.Res.fonts.minecraftiaOutline.toFont();
-		fontTiny = hxd.Res.fonts.barlow_condensed_medium_regular_9.toFont();
+		// fontTiny = hxd.Res.fonts.barlow_condensed_medium_regular_9.toFont();
+		fontTiny = hxd.Res.fonts.dingm.toFont();
 		fontSmall = hxd.Res.fonts.barlow_condensed_medium_regular_11.toFont();
 		fontMedium = hxd.Res.fonts.barlow_condensed_medium_regular_17.toFont();
 		fontLarge = hxd.Res.fonts.barlow_condensed_medium_regular_32.toFont();

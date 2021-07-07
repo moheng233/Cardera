@@ -37,6 +37,7 @@ class Game extends Process {
 		scroller.filter = new h2d.filter.ColorMatrix(); // force rendering for pixel perfect
 
 		camera = new Camera();
+		// var camera = new h2d.Camera(root.getScene());
 		level = new Level();
 		fx = new Fx();
 		hud = new ui.Hud();
