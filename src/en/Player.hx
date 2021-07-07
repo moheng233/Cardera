@@ -1,5 +1,6 @@
 package en;
 
+import tools.BetterAnim.BetterAmim;
 import h2d.Tile;
 import h2d.Anim;
 import hxd.Res;
@@ -33,7 +34,7 @@ class Player extends Entity {
     var runtile:Array<Tile>;
     var runendtile:Array<Tile>;
 
-    var anim: Anim;
+    var anim: BetterAmim;
 
     public function new(x,y) {
         super(x,y);
@@ -60,7 +61,7 @@ class Player extends Entity {
             t.setCenterRatio();
         }
 
-        this.anim = new Anim(this.idletile,7,spr);
+        this.anim = new BetterAmim(this.idletile,7,spr);
         // this.anim.fading = true;
         trace("Player is Render");
 
@@ -150,10 +151,10 @@ class Player extends Entity {
         }
 
         if(this.facestate == RIGHT){
-            this.anim.getFrame().xFlip = true;
+            this.anim.xFlip = true;
         }
         if(this.facestate == LEFT){
-            this.anim.getFrame().xFlip = false;
+            this.anim.xFlip = false;
         }
 
         this.updateState();
