@@ -13,7 +13,7 @@
                 "$haxe-trace"
             ],
             "presentation": {
-                "reveal": "never",
+                "reveal": "never"
             },
             "group": {
                 "kind": "build",
@@ -36,6 +36,18 @@
                 "$haxe-error",
                 "$haxe-trace"
             ]
+        },
+        {
+            "type": "hxml",
+            "file": "hl.dx.hxml",
+            "problemMatcher": [
+                "$haxe-absolute",
+                "$haxe",
+                "$haxe-error",
+                "$haxe-trace"
+            ],
+            "group": "build",
+            "label": "haxe: hl.dx.hxml"
         }
     ]
 }
